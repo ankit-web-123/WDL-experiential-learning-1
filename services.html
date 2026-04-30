@@ -137,7 +137,25 @@
       </div>
     </div>
   </section>
+  <!-- Live Currency Converter Widget -->
+  <div class="currency-widget"
+    style="background: #ffffff; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #cccccc;">
+    <h4 style="margin-bottom: 10px; color: #1a1a1a;">Live Pricing Estimate:</h4>
+    <p style="font-size: 0.9rem; color: #555555; margin-bottom: 10px;">
+      Standard CNC Component Batch: <strong>₹<span id="inr-price">150000</span></strong>
+    </p>
 
+    <label for="currency-select" style="font-size: 0.8rem; font-weight: bold;">Convert to: </label>
+    <select id="currency-select" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+      <option value="USD">USD ($)</option>
+      <option value="EUR">EUR (€)</option>
+      <option value="GBP">GBP (£)</option>
+    </select>
+
+    <p style="margin-top: 10px; font-weight: bold; color: #f0a500;">
+      Converted Total: <span id="converted-price">Loading...</span>
+    </p>
+  </div>
   <section class="cta-banner">
     <div class="container">
       <h2>Have a Specific Requirement?</h2>
@@ -145,7 +163,7 @@
       <a href="index.html#contact" class="btn btn-dark">Contact Us</a>
     </div>
   </section>
-
+  <script src="script.js"></script>
   <footer class="footer">
     <div class="footer-brand-only">
       <div class="logo">⚙️ Precision Tools Inc.</div>

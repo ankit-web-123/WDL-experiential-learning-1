@@ -58,7 +58,22 @@
       </div>
     </div>
   </section>
+  <!-- ===== PERFORMANCE CHART SECTION ===== -->
+  <section class="performance-section" style="padding: 85px 20px; background-color: #f9f9f9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">By The Numbers</span>
+        <h2>Our Recent Production Output</h2>
+      </div>
 
+      <!-- This canvas is where Chart.js will draw the graphic -->
+      <div
+        style="position: relative; height:40vh; width:100%; max-width: 900px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <canvas id="productionChart"></canvas>
+      </div>
+
+    </div>
+  </section>
   <section class="photo-section">
     <img src="factory_floor.png" alt="Precision Tools Inc. Factory Floor" class="photo-full" />
   </section>
@@ -245,15 +260,23 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-brand-only">
-      <div class="logo">⚙️ Precision Tools Inc.</div>
-      <p>Engineering excellence and precision since 1998.</p>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Precision Tools Inc. All Rights Reserved.</p>
-    </div>
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<script src="script.js"></script>
+<footer class="footer">
+  <div class="footer-brand-only">
+    <div class="logo">⚙️ Precision Tools Inc.</div>
+    <p>Engineering excellence and precision since 1998.</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Precision Tools Inc. All Rights Reserved.</p>
+  </div>
+</footer>
+
 </body>
 
 </html>
